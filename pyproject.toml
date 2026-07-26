@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "theoddsapi-client"
+version = "1.0.1"
+description = "Official Python client for TheOddsAPI: real-time sports odds from 50+ sportsbooks across 26 sports, plus player props, Pinnacle-anchored edges, fair odds, and historical snapshots."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["sports", "odds", "betting", "api", "sportsbook", "arbitrage", "props"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://theoddsapi.com"
+Documentation = "https://theoddsapi.com/docs/"
+Changelog = "https://theoddsapi.com/changelog"
+
+[tool.hatch.build.targets.wheel]
+packages = ["theoddsapi"]
