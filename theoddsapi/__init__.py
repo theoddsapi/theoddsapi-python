@@ -13,4 +13,4 @@ from .client import TheOddsAPI, TheOddsAPIError
 Client = TheOddsAPI
 
 __all__ = ["TheOddsAPI", "TheOddsAPIError", "Client"]
-__version__ = "1.0.1"
+__version__ = "1.0.2"

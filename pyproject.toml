@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "theoddsapi-client"
-version = "1.0.1"
+version = "1.0.2"
 description = "Official Python client for TheOddsAPI: real-time sports odds from 50+ sportsbooks across 26 sports, plus player props, Pinnacle-anchored edges, fair odds, and historical snapshots."
 readme = "README.md"
 requires-python = ">=3.8"

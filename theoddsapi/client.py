@@ -40,7 +40,7 @@ class TheOddsAPI:
         url = f"{self.base_url}{path}" + (f"?{query}" if query else "")
         req = urllib.request.Request(url, headers={
             "x-api-key": self.api_key,
-            "User-Agent": "theoddsapi-python/1.0.1",
+            "User-Agent": "theoddsapi-python/1.0.2",
         })
         delay = 1.0
         for attempt in range(self.max_retries + 1):
