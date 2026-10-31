@@ -5,7 +5,7 @@
     export THEODDSAPI_API_KEY=your_key_here
     python3 examples/historical.py
 
-Guide: https://theoddsapi.com/guides/historical-odds-backtesting
+Guide: https://bettingdataapi.com/guides/historical-odds-backtesting
 
 Defaults to the last 7 days if no from/to window is given; max limit
 is 1000 rows per call, paginate with offset for more.

@@ -1,4 +1,4 @@
-"""theoddsapi: official Python client for TheOddsAPI (theoddsapi.com).
+"""theoddsapi: official Python client for TheOddsAPI (bettingdataapi.com).
 
 Zero dependencies (standard library only). One class, one method per endpoint.
 
@@ -13,4 +13,4 @@ from .client import TheOddsAPI, TheOddsAPIError
 Client = TheOddsAPI
 
 __all__ = ["TheOddsAPI", "TheOddsAPIError", "Client"]
-__version__ = "1.0.2"
+__version__ = "1.0.3"

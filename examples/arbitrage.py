@@ -5,7 +5,7 @@
     export THEODDSAPI_API_KEY=your_key_here
     python3 examples/arbitrage.py
 
-Guide: https://theoddsapi.com/guides/arbitrage-detection
+Guide: https://bettingdataapi.com/guides/arbitrage-detection
 
 Today this covers two-outcome h2h markets only. Every opportunity
 carries detected_at / age_seconds (server-side precompute age) and a

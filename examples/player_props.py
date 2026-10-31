@@ -5,7 +5,7 @@
     export THEODDSAPI_API_KEY=your_key_here
     python3 examples/player_props.py
 
-Guide: https://theoddsapi.com/guides/nba-player-props-edge-detection
+Guide: https://bettingdataapi.com/guides/nba-player-props-edge-detection
 
 Note: props responses follow the same events/books/outcomes envelope as
 GET /odds/, but the exact market-specific fields can vary by sport. This

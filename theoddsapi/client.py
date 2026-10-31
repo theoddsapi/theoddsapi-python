@@ -1,4 +1,4 @@
-"""HTTP client for TheOddsAPI. Standard library only, retries on 5xx."""
+"""HTTP client for Betting Data API. Standard library only, retries on 5xx."""
 import json
 import os
 import time
@@ -6,7 +6,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-BASE_URL = "https://api.theoddsapi.com"
+BASE_URL = "https://api.bettingdataapi.com"
 ENV_KEY = "THEODDSAPI_API_KEY"
 RETRY_STATUSES = {502, 503, 504}
 
@@ -21,14 +21,14 @@ class TheOddsAPIError(Exception):
 
 
 class TheOddsAPI:
-    """Thin client for TheOddsAPI. Docs: https://theoddsapi.com/docs/"""
+    """Thin client for Betting Data API. Docs: https://bettingdataapi.com/docs/"""
 
     def __init__(self, api_key=None, base_url=BASE_URL, timeout=15, max_retries=3):
         self.api_key = api_key or os.environ.get(ENV_KEY)
         if not self.api_key:
             raise TheOddsAPIError(
                 0, f"no API key: pass TheOddsAPI(\"key\") or set {ENV_KEY}. "
-                   "Free key in minutes at https://theoddsapi.com/start")
+                   "Free key in minutes at https://bettingdataapi.com/start")
         self.base_url = base_url.rstrip("/")
         self.timeout = timeout
         self.max_retries = max_retries
@@ -40,7 +40,7 @@ class TheOddsAPI:
         url = f"{self.base_url}{path}" + (f"?{query}" if query else "")
         req = urllib.request.Request(url, headers={
             "x-api-key": self.api_key,
-            "User-Agent": "theoddsapi-python/1.0.2",
+            "User-Agent": "theoddsapi-python/1.0.3",
         })
         delay = 1.0
         for attempt in range(self.max_retries + 1):

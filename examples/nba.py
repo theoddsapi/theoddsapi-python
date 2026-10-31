@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """NBA example: upcoming moneylines + best price per team across books.
 
-Free tier. Get a key at https://theoddsapi.com/start then:
+Free tier. Get a key at https://bettingdataapi.com/start then:
     pip install theoddsapi-client
     export THEODDSAPI_API_KEY=your_key_here
     python3 examples/nba.py
