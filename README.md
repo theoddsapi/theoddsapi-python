@@ -1,13 +1,13 @@
 # theoddsapi
 
-Official Python client for [Betting Data API](https://bettingdataapi.com): real-time sports odds from 50+ sportsbooks across 26 sports, normalized into one JSON shape, plus player props, Pinnacle-anchored edge detection, fair odds, and historical snapshots.
+Official Python client for [Betting Data API](https://bettingdataapi.com): real-time sports odds from 50+ sportsbooks across 20+ sports, normalized into one JSON shape, plus player props, Pinnacle-anchored edge detection, fair odds, and historical snapshots.
 
 Zero dependencies. Python 3.8+.
 
 ## Why Betting Data API?
 
 - 50+ sportsbooks, one JSON shape
-- 26 sports, plus player props and historical snapshots
+- 20+ sports, plus player props and historical snapshots
 - Pinnacle-anchored fair odds and cross-book arbitrage (Business)
 - Zero dependencies — standard library only
 
